@@ -29,7 +29,7 @@ suite('ToggleNormalisationRulesCommand', () => {
         test('it just shows message if no rules are defined', async () => {
             await command.execute();
 
-            verify(deps.windowAdaptor.showInformationMessage('Please set `partialDiff.preComparisonTextNormalizationRules` first'));
+            verify(deps.windowAdaptor.showInformationMessage('Please set `partialDiff2.preComparisonTextNormalizationRules` first'));
         });
     });
 

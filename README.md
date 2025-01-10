@@ -24,23 +24,23 @@ A couple of requests from me when you raise an github issue.
 
 ## Commands
 
-* `Select Text for Compare` (**Command ID:** `extension.partialDiff.markSection1`)
+* `Select Text for Compare` (**Command ID:** `extension.partialDiff2.markSection1`)
 
     Marks the selected text as the text to compare the next selection with.
 
-* `Compare Text with Previous Selection` (**Command ID:** `extension.partialDiff.markSection2AndTakeDiff`)
+* `Compare Text with Previous Selection` (**Command ID:** `extension.partialDiff2.markSection2AndTakeDiff`)
 
     Compares the selected text to the first selection.
 
-* `Compare Text with Clipboard` (**Command ID:** `extension.partialDiff.diffSelectionWithClipboard`)
+* `Compare Text with Clipboard` (**Command ID:** `extension.partialDiff2.diffSelectionWithClipboard`)
 
     Compares the current clipboard to the selected text.
 
-* `Compare Text in Visible Editors` (**Command ID:** `extension.partialDiff.diffVisibleEditors`)
+* `Compare Text in Visible Editors` (**Command ID:** `extension.partialDiff2.diffVisibleEditors`)
 
     Compares text in 2 visible editors.
 
-* `Toggle Pre-Comparison Text Normalization Rules` (**Command ID:** `extension.partialDiff.togglePreComparisonTextNormalizationRules`)
+* `Toggle Pre-Comparison Text Normalization Rules` (**Command ID:** `extension.partialDiff2.togglePreComparisonTextNormalizationRules`)
 
     Toggle pre-comparison text normalization rules.
 
@@ -51,20 +51,20 @@ A couple of requests from me when you raise an github issue.
 
 ## Configurations
 
-* `partialDiff.commandsOnContextMenu` (default: `{"markSection1": true, ...}`, all commands visible)
+* `partialDiff2.commandsOnContextMenu` (default: `{"markSection1": true, ...}`, all commands visible)
 
     Commands appear on the context menu. Unlisted commands will still appear.
    
-    For example, if you don't want to see *Compare Text in Visible Editors* command (Command ID: `extension.partialDiff.diffVisibleEditors`)
+    For example, if you don't want to see *Compare Text in Visible Editors* command (Command ID: `extension.partialDiff2.diffVisibleEditors`)
     on the context menu, you can set this setting as follows:
 
     ```
-    "partialDiff.commandsOnContextMenu": {
+    "partialDiff2.commandsOnContextMenu": {
       "diffVisibleEditors": false
     }
     ```
 
-* `partialDiff.preComparisonTextNormalizationRules` (default: `[]`)
+* `partialDiff2.preComparisonTextNormalizationRules` (default: `[]`)
 
     Rules to normalize texts for diff view.
 
@@ -83,7 +83,7 @@ A couple of requests from me when you raise an github issue.
     Sample `preComparisonTextNormalizationRules`:
 
     ```
-    "partialDiff.preComparisonTextNormalizationRules": [
+    "partialDiff2.preComparisonTextNormalizationRules": [
       {
         "name": "Replace tabs with whitespaces",
         "match": "\t",
@@ -104,29 +104,29 @@ A couple of requests from me when you raise an github issue.
     ]
     ```
 
-* `partialDiff.enableTelemetry` (default: `true`)
+* `partialDiff2.enableTelemetry` (default: `true`)
 
     Allow the extension usage data to be sent to the extension author.
     
-    Partial Diff sends usage data only when **both** `partialDiff.enableTelemetry` and
+    Partial Diff sends usage data only when **both** `partialDiff2.enableTelemetry` and
     [`telemetry.enableTelemetry`](https://code.visualstudio.com/docs/supporting/faq#_how-to-disable-telemetry-reporting)
     are set to `true`.
 
-* `partialDiff.hideCommandsOnContextMenu` (default: `false`)
+* `partialDiff2.hideCommandsOnContextMenu` (default: `false`)
 
     (DEPRECATED) Hide Partial Diff commands on the context menu.
-    Please use `partialDiff.commandsOnContextMenu` instead.
+    Please use `partialDiff2.commandsOnContextMenu` instead.
 
 ## Keyboard Shortcuts
 
 You can quickly mark the selected text by adding the `partial-diff` commands to your keyboard shortcut settings. For example:
 
 ```json
-  { "key": "ctrl+1", "command": "extension.partialDiff.markSection1",
+  { "key": "ctrl+1", "command": "extension.partialDiff2.markSection1",
                         "when": "editorTextFocus" },
-  { "key": "ctrl+2", "command": "extension.partialDiff.markSection2AndTakeDiff",
+  { "key": "ctrl+2", "command": "extension.partialDiff2.markSection2AndTakeDiff",
                         "when": "editorTextFocus" },
-  { "key": "ctrl+3", "command": "extension.partialDiff.diffSelectionWithClipboard",
+  { "key": "ctrl+3", "command": "extension.partialDiff2.diffSelectionWithClipboard",
                         "when": "editorTextFocus" },
 ```
 

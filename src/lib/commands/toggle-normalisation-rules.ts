@@ -18,7 +18,7 @@ export default class ToggleNormalisationRulesCommand implements Command {
             this.normalisationRuleStore.specifyActiveRules(newRules);
         } else {
             await this.windowAdaptor.showInformationMessage(
-                'Please set `partialDiff.preComparisonTextNormalizationRules` first'
+                'Please set `partialDiff2.preComparisonTextNormalizationRules` first'
             );
         }
     }

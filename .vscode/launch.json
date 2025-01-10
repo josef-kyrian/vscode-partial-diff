@@ -11,12 +11,14 @@
       "request": "launch",
       "runtimeExecutable": "${execPath}",
       "args": [
+		"--disable-extensions", // Spuštění bez rozšíření
         "--extensionDevelopmentPath=${workspaceFolder}"
       ],
       "outFiles": [
         "${workspaceFolder}/dist/**/*.js"
       ],
-      "preLaunchTask": "npm: compile:prod"
+	  "preLaunchTask": "npm: compile"
+    //   "preLaunchTask": "npm: compile:prod"
     },
     {
       "name": "Extension Tests",
@@ -30,7 +32,8 @@
       "outFiles": [
         "${workspaceFolder}/out/test/**/*.js"
       ],
-      "preLaunchTask": "npm: compile:test:it"
+    //   "preLaunchTask": "npm: compile:test:it"
+	"preLaunchTask": "npm: compile"
     }
   ]
 }

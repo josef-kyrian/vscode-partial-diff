@@ -1,8 +1,8 @@
-export const EXTENSION_ID = 'partialDiff';
+export const EXTENSION_ID = 'partialDiff2';
 
-export const EXTENSION_NAMESPACE = 'extension.partialDiff';
+export const EXTENSION_NAMESPACE = 'extension.partialDiff2';
 
-export const EXTENSION_SCHEME = 'partialdiff';
+export const EXTENSION_SCHEME = 'partialdiff2';
 
 export const TextKey = {
     REGISTER1: 'reg1',

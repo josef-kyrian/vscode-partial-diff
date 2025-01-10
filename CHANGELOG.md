@@ -20,14 +20,14 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [1.4.0] - 2018-09-05
 ### Added
-- Usage data collecting capability, together with the configuration (`partialDiff.enableTelemetry`) which stops Partial Diff to collect usage data.
+- Usage data collecting capability, together with the configuration (`partialDiff2.enableTelemetry`) which stops Partial Diff to collect usage data.
 
 ## [1.3.0] - 2018-07-28
 ### Added
 - A configuration for individually show/hide Partial Diff commands on the context menu. [#27](https://github.com/ryu1kn/vscode-partial-diff/issues/27)
 
 ### Deprecated
-- `partialDiff.hideCommandsOnContextMenu` setting, as the new configuration can cover its use case.
+- `partialDiff2.hideCommandsOnContextMenu` setting, as the new configuration can cover its use case.
 
 ## [1.2.0] - 2018-06-27
 ### Added
